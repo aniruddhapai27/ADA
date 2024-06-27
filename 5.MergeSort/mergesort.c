@@ -60,9 +60,9 @@ void plotter() {
 	int *arr, n;
 	srand(time(NULL));
 	FILE *f1, *f2, *f3;
-	f1 = fopen("m_b.txt", "a");
-	f2 = fopen("m_w.txt", "a");
-	f3 = fopen("m_a.txt", "a");
+	f1 = fopen("m_b.txt", "w");
+	f2 = fopen("m_w.txt", "w");
+	f3 = fopen("m_a.txt", "w");
 	
 	for(n=2; n<=1024; n*=2) {
 	    arr = (int *)malloc(sizeof(int)*n);
