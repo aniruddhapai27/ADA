@@ -38,7 +38,6 @@ void tester()
     printf("Enter text: \n");
     getchar();
     fgets(text, sizeof(text), stdin);
-    text[strcspn(text, "\n")] = '\0';
 
     printf("Enter pattern length: ");
     scanf("%d", &m);
@@ -46,7 +45,6 @@ void tester()
     printf("Enter pattern: \n");
     getchar();
     fgets(pattern, sizeof(pattern), stdin);
-    pattern[strcspn(pattern, "\n")] = '\0';
 
     int idx = strMat(text, pattern, n, m);
     if (idx == -1)

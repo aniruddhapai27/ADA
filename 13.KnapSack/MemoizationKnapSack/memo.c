@@ -93,7 +93,7 @@ void plotter()
         count = 0;
         n = i;
         W = i * 5;
-        for (int j = 0; j <= n; j++)
+        for (int j = 0; j < n; j++)
         {
             w[j] = rand() % 10 + 1;
             p[j] = rand() % 50 + 1;

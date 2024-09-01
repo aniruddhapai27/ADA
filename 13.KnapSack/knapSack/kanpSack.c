@@ -83,7 +83,7 @@ void plotter()
         count = 0;
         n = i * 2;
         capacity = i * 5;
-        for (int j = 1; j <= n; j++)
+        for (int j = 0; j < n; j++)
         {
             w[i] = rand() % capacity + 1;
             p[i] = rand() % 50 + 1;
